@@ -1,0 +1,16 @@
+#!/bin/bash
+alias rscp="rsync -avhrLz --delete --delete-excluded --ignore-errors --progress --stats --exclude --force"
+alias history="cat ~/.bash_history"
+alias ghistory="history | grep"
+alias gist="ghistory"
+alias zl="export SHELL=/bin/zsh;exec /bin/zsh -l -c screen"
+
+gitPushMessage() {
+	if [ $# -gt 0 ]
+	then
+		git commit -m "$@" -a
+		git pull
+		git push
+	fi
+}
+alias git_go="gitPushMessage"
