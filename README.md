@@ -2,4 +2,4 @@
 My Terminal Configuration
 
 ## Installation
-Clone int ~/shell-config and run install.sh
+Clone to ~/shell-config and run install.sh
