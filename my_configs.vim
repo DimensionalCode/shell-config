@@ -14,3 +14,7 @@ let g:syntastic_cpp_compiler_options = ' -std=c++11 -Wall -Werror -pedantic '
 :set tabstop=4		" To match the sample file
 :set noexpandtab	" Use tabs, not spaces
 :%retab!			" Retabulate the whole file
+:set tabstop=1		" To match the sample file
+:%retab!			" Retabulate the whole file
+:set tabstop=4		" To match the sample file
+:%retab!			" Retabulate the whole file
