@@ -22,4 +22,4 @@ function MyFormat()
 	silent! %s/\n\s*{/ {/g
 endfunction
 
-autocmd VimEnter * call MyFormat()
+autocmd BufEnter * call MyFormat()
