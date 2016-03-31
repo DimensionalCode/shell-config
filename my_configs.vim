@@ -20,3 +20,4 @@ set tabstop=4		" To match the sample file
 retab!			" Retabulate the whole file
 
 set nu
+:%s/\n\s*{/ {/g
