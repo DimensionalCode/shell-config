@@ -8,6 +8,12 @@ alias screens="screen -ls"
 alias screenattach="screen -r"
 alias joinscreen="screen -x"
 
+mkcd() { 
+	    mkdir "$@" || return
+		shift "$(( $# - 1 ))"
+		cd -- "$1"
+}
+
 gitPushMessage() {
 	if [ $# -gt 0 ]
 		then
