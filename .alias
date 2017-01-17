@@ -4,12 +4,14 @@ alias history="cat ~/.bash_history"
 alias ghistory="history | grep"
 alias gist="ghistory"
 alias zl="export SHELL=/bin/zsh;exec /bin/zsh -l -c screen"
-alias screens="screen -ls"
+
+alias screenlist="screen -ls"
 alias screenattach="screen -r"
-alias joinscreen="screen -x"
+alias screendetatch="screen -d"
+alias screenjoin="screen -x"
 
 mkcd() { 
-	    mkdir "$@" || return
+	mkdir "$@" || return
 		shift "$(( $# - 1 ))"
 		cd -- "$1"
 }
