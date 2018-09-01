@@ -1,3 +1,4 @@
+startup_message off
 shell "/bin/zsh"
 term screen-256color
 hardstatus on
