@@ -1,2 +1,5 @@
+shell "/bin/zsh"
 term screen-256color
-zsh -l
+hardstatus on
+hardstatus alwayslastline
+exec zsh -l
