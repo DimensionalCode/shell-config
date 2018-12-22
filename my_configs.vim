@@ -12,6 +12,8 @@ set mouse=a
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -Wall -Werror -pedantic '
 
 set nu
+set tabstop=4
+set noexpandtab
 
 function MyFormat()
 	set tabstop=4	" To match the sample file
