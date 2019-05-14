@@ -24,4 +24,6 @@ function MyFormat()
 	silent! %s/\n\s*{/ {/g
 endfunction
 
+autocmd BufEnter * set tabstop=4 | set noexpandtab
 " autocmd BufEnter * call MyFormat()
+let g:go_version_warning = 0
