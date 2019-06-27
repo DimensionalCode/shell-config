@@ -16,6 +16,8 @@ set tabstop=4
 set noexpandtab
 
 function MyFormat()
+	e ++ff=dos
+	set ff=unix
 	set tabstop=4	" To match the sample file
 	set noexpandtab	" Use tabs, not spaces
 	%retab!			" Retabulate the whole file
@@ -24,6 +26,13 @@ function MyFormat()
 	silent! %s/\n\s*{/ {/g
 endfunction
 
-autocmd BufEnter * set tabstop=4 | set noexpandtab
-" autocmd BufEnter * call MyFormat()
+function FixLines()
+	e ++ff=dos
+	set ff=unix
+endfunction
+
 let g:go_version_warning = 0
+
+autocmd BufEnter * set tabstop=4 | set noexpandtab
+
+" autocmd BufEnter * call MyFormat()
