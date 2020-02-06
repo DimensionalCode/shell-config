@@ -21,3 +21,4 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 autoload -U zmv
 alias zcp='zmv -C'
 alias zln='zmv -L'
+bindkey -e
