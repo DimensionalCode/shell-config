@@ -1,5 +1,5 @@
 #!/bin/bash
-alias rscp="rsync -avhrLz --delete --delete-excluded --ignore-errors --progress --stats --exclude --force"
+alias rscp="rsync -avhrLzP --delete --delete-excluded --ignore-errors --stats --exclude --force"
 alias history="cat ~/.bash_history"
 alias ghistory="history | grep"
 alias gist="ghistory"
@@ -9,6 +9,9 @@ alias screenlist="screen -ls"
 alias screenattach="screen -r"
 alias screendetatch="screen -d"
 alias screenjoin="screen -x"
+
+# allow aliases in sudo
+alias sudo='sudo '
 
 mkcd() { 
 	mkdir "$@" || return
