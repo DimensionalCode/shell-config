@@ -11,7 +11,7 @@ compinit
 export HISTFILE=~/.bash_history
 export HISTSIZE=1000000
 export SAVEHIST=1000000
-export HISTORY_IGNORE="(cd|vi(|m)|ls|pwd|exit|clear|popd|rm(| -*) (|*(\\|\/))\*)"
+export HISTORY_IGNORE="(history|cd|hostname|cmake ..|make(| install)|vi(|m)|screen(|list|join)|ip a|df(| -h)|(bash|zsh)(| -l)|zl|py(py|thon)(|3)(| --version)|ls|pwd|exit|clear|popd|rm(| -*) (|*(\\|\/))\*)"
 setopt histignorealldups
 
 source ~/.bashrc
