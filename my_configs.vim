@@ -33,6 +33,8 @@ endfunction
 
 let g:go_version_warning = 0
 
+let NERDTreeShowHidden=1
+
 autocmd BufEnter * set tabstop=4 | set noexpandtab
 
 " autocmd BufEnter * call MyFormat()

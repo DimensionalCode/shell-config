@@ -8,9 +8,9 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
-HISTFILE=~/.bash_history
-HISTSIZE=100000
-SAVEHIST=100000
+export HISTFILE=~/.bash_history
+export HISTSIZE=1000000
+export SAVEHIST=1000000
 # End of lines configured by zsh-newuser-install
 
 source ~/.bashrc

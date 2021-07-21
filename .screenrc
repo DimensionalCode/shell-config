@@ -3,4 +3,5 @@ shell "/bin/zsh"
 term screen-256color
 hardstatus on
 hardstatus alwayslastline
+defscrollback 1000000
 exec zsh -l

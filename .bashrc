@@ -1,6 +1,6 @@
-HISTSIZE=1000000
-HISTIGNORE='rm'
-HISTCONTROL=ignoreboth
+export HISTSIZE=1000000
+export HISTIGNORE='rm'
+export HISTCONTROL=ignoreboth
 export PS1="\h:\W \u\$ "
 source ~/.alias
 source ~/.localrc
