@@ -11,7 +11,8 @@ compinit
 export HISTFILE=~/.bash_history
 export HISTSIZE=1000000
 export SAVEHIST=1000000
-export HISTORY_IGNORE="(&|ls|pwd|exit|clear|rm .* \*)"
+export HISTORY_IGNORE="(cd|vi(|m)|ls|pwd|exit|clear|popd|rm(| -*) (|*(\\|\/))\*)"
+setopt histignorealldups
 
 source ~/.bashrc
 PS1="%m:%1d %n$ "

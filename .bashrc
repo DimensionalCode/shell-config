@@ -1,5 +1,5 @@
 export HISTSIZE=1000000
-export HISTIGNORE="&:ls:pwd:exit:clear:rm .* \*"
+export HISTIGNORE="vim:ls:pwd:exit:clear:rm \*"
 export HISTCONTROL=ignoreboth
 export PS1="\h:\W \u\$ "
 source ~/.alias
