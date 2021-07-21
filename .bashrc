@@ -1,5 +1,5 @@
 export HISTSIZE=1000000
-export HISTIGNORE='rm'
+export HISTIGNORE="&:ls:pwd:exit:clear:rm .* \*"
 export HISTCONTROL=ignoreboth
 export PS1="\h:\W \u\$ "
 source ~/.alias

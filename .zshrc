@@ -7,11 +7,11 @@ zstyle :compinstall filename '~/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
-# Lines configured by zsh-newuser-install
+
 export HISTFILE=~/.bash_history
 export HISTSIZE=1000000
 export SAVEHIST=1000000
-# End of lines configured by zsh-newuser-install
+export HISTORY_IGNORE="(&|ls|pwd|exit|clear|rm .* \*)"
 
 source ~/.bashrc
 PS1="%m:%1d %n$ "
