@@ -12,3 +12,11 @@ cd ~/shell-config
 cp my_configs.vim ~/.vim_runtime/
 
 git clone git://github.com/vim-scripts/Conque-GDB.git ~/.vim_runtime/sources_non_forked/Conque-GDB
+
+if grep -Fq "collections.abc" ~/.vim_runtime/sources_non_forked/Conque-GDB/autoload/conque_gdb/conque_gdb.py
+then
+	echo "Conque Correct"
+else
+	echo "Patching Conque"
+	sed "s/collections/collections.abc/g" -i ~/.vim_runtime/sources_non_forked/Conque-GDB/autoload/conque_gdb/conque_gdb.py
+fi
