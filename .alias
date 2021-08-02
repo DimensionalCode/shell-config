@@ -29,3 +29,5 @@ gitPushMessage() {
 			fi
 }
 alias git_go="gitPushMessage"
+
+alias finduse="grep -r --exclude-dir=\".*\" --include={\"*.c*\",\"*.h*\",\"*.js\",\"*.py*\",\"*.java\",\"*.php\",\"*.htm*\"}"

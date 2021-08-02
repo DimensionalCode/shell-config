@@ -4,7 +4,6 @@ export HISTCONTROL=ignoreboth
 export PS1="\h:\W \u\$ "
 source ~/.alias
 source ~/.localrc
-cd ~/.vim_runtime && git pull --rebase --quiet && cd ~
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
