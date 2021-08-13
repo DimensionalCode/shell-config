@@ -6,6 +6,7 @@ alias gist="ghistory"
 alias zl="export SHELL=/bin/zsh;exec /bin/zsh -l -c screen"
 
 alias screen=tmux
+alias screenstart="tmux new -s "
 alias screenlist="tmux ls"
 alias screenattach="tmux attach-session"
 alias screendetatch="tmux detach"
